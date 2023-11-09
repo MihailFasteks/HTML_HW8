@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+nav ul li{
+    position: relative;
+    float: left;
+}
+nav ul li a{
+    padding: 15px;
+    color: aliceblue;
+    background-color: green;
+    font-size: 16px;
+    display: block;
+    border: 1px solid black;
+}
+nav ul li a:hover{
+    background-color: rgb(24, 66, 24);
+}
+nav ul li ul{
+    position: absolute;
+    left: 0;
+    width: 110px;
+    background-color: green;
+    display: none;
+}
+nav ul li ul li{
+    width: 100%;
+    border: 1px solid black;
+
+}
+nav ul li ul li ul{
+    left: 110px;
+    top: 0;
+
+}
+nav ul li:hover>ul{
+    display: initial;
+}
+p{
+    clear: both;
+}
